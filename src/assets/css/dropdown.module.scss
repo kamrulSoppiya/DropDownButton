@@ -1,0 +1,67 @@
+@forward '../rest/resetCode.scss';
+
+$borderRadi: 10px;
+$boxShadow:0.2px 0.1px 2px 0px;
+.btnContainer{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap:6px;
+    padding:6px 7px;
+    border-radius: $borderRadi;
+    border:1px solid rgb(250, 245, 245);
+    box-shadow: $boxShadow;
+    transition: 0.3s all ease-in-out;
+    width: 130px;
+    -webkit-border-radius: $borderRadi;
+    -moz-border-radius: $borderRadi;
+    -ms-border-radius: $borderRadi;
+    -o-border-radius: $borderRadi;
+}
+.allItems{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    box-shadow: $boxShadow;
+    cursor: pointer;
+    padding: 5px 0;
+    border-radius: $borderRadi;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+}
+.allItems .item{
+    transition: 0.3s all ease-in-out;
+    width: 83%;
+    height: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+.item:hover{
+    background-color: rgb(185, 185, 185);
+}
+.selected{
+    background-color: rgb(225, 228, 225);
+    width: 300px;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: $borderRadi;
+    box-shadow: $boxShadow;
+    -webkit-border-radius: $borderRadi;
+    -moz-border-radius: $borderRadi;
+    -ms-border-radius: $borderRadi;
+    -o-border-radius: $borderRadi;
+}
+.selectedItem{
+    display: flex;
+    justify-content: space-between;
+}
+.selectedItem button{
+    background-color: transparent;
+    border: none;
+    color: rgb(141, 17, 17);
+    cursor: pointer;
+}

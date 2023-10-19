@@ -1,0 +1,9 @@
+import Button from "./components/Button/Button"
+import style from './assets/css/button.module.scss';
+function App() {
+  return (
+      <Button type="button" children='Add Socail Link' className={style.btnContainer} value="arat"/>
+  )
+}
+
+export default App
